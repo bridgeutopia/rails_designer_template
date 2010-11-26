@@ -1,0 +1,14 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+.DS_Store
+backups/*
+*~
+.#*
+
+Capfile
+project_notes
+log
+config/database.yml
+.sass-cache

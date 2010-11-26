@@ -1,0 +1,59 @@
+How to Install Rails 3 on Windows
+
+Rails FTW by Bryan Bibat
+
+http://railsftw.bryanbibat.net/
+
+Install XAMPP (suggested for Windows XP users)
+RadRails - Recommended editor for Rails (Windows)
+
+Making the Rails Template App Work
+
+Rename config/database.yml.example to config/database.yml
+Add/change your username and password (not needed if it's the same as your local settings)
+
+bundle install
+- This command will install Rails and all other gems
+
+rake db:create RAILS_ENV=development
+
+
+Using SCSS
+
+http://nex-3.com/posts/96-scss-sass-is-a-css-extension
+http://sass-lang.com/
+
+SCSS is close to CSS syntax but it has SASS features (mixins). 
+Ruby + CSS = quite powerful
+
+
+
+sass --watch app/stylesheets:public/stylesheets --trace
+- Start watching stylesheet changes
+
+
+
+Using HAML
+
+http://haml-lang.com/
+
+
+Creating a new layout
+
+You can use application.html.haml as a basis
+Add a new layout called main.html.haml and your code 
+If you want to use a different layout for a controller, try the following:
+
+On home_controller.rb
+
+add 
+
+layout 'main'
+
+before
+
+def index
+
+end
+
+
